@@ -1,0 +1,138 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+    margin:0;
+}
+h3 {
+    margin:0;
+}
+.App {
+    height:100vh;
+}
+.outer {
+    height:100%;
+}
+.contact {
+    background-color: #F7F7F7;
+    width: 25%;
+    display: inline-block;
+    color: #3F3F44;
+    vertical-align: top;
+    height:100%;
+}
+.just-contact {
+    padding: 10px 0 20px 0;
+}
+
+
+/* Person */
+.person {
+    
+    
+    
+}
+.flex-person .item-1,.item-2,.msg-icon {
+    display: inline-block;
+}
+.flex-person {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #3F3F44;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+.item-1 {
+    align-self:centre;
+    margin-right: 10px;
+}
+.item-3 {
+    position: absolute;
+    right:3%;
+}
+.person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #CCEABB;
+}
+/* message */
+.msg-div {
+    height: 100%;
+    display: inline-block;
+    width: 75%;
+    position: relative;
+    background-color: #CCEABB;
+}
+.side-div {
+    height: 100%;
+    display: inline-block;
+    width: 75%;
+    position: relative;
+    background-color: #3F3F44;
+}
+.icons-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.type-box {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.2%;
+}
+.top {
+    width: 100%;
+    height:50px;
+    background-color: #3F3F44;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top-item {
+    padding: 10px;
+}
+.top-item {
+    display: inline-block;
+}
+.top h3 {
+    color:#F7F7F7;
+}
+.top-img {
+    border: 3px sol
+    id #FDCB9E;
+}
+.name {
+    color: #F7F7F7;
+}
+.msg-chat {
+    color: #3F3F44;
+    background-color: #FDCB9E;
+    max-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    margin: 10px;
+    text-align: center;
+    min-height: 40px;
+    position: relative;
+}
+.inst {
+    width: 100%;
+    height: 20px;
+}
+.inst p {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #3F3F44;
+}
+.inst-left {
+    position: absolute;
+    left: 2%;
+}
+.inst-right {
+    position: absolute;
+    
+    right: 2%;
+}
