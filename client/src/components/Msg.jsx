@@ -108,6 +108,7 @@ function Msg(props) {
   console.log(data);
   function handleFunc(elem) {
     return (
+      <div className="outer-msg-chat">
       <div className="msg-chat">
         <span className="name">{elem.senderName}: </span>
         {elem.text}
@@ -115,6 +116,7 @@ function Msg(props) {
           <p className="inst-left">{date(elem.id1)}</p>
           <p className="inst-right">{time(elem.id1)}</p>
         </div>
+      </div>
       </div>
     );
   }

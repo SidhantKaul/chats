@@ -111,16 +111,23 @@ h3 {
 .name {
     color: #F7F7F7;
 }
+.outer-msg-chat {
+    /* min-height: 40px; */
+}
 .msg-chat {
     color: #3F3F44;
     background-color: #FDCB9E;
-    max-width: 300px;
+    /* max-width: 300px; */
+    min-width: 100px;
+    min-height: 40px;
     border-radius: 10px;
     border-top-left-radius: 0px;
     margin: 10px;
     text-align: center;
-    min-height: 40px;
+    height: 100%;
     position: relative;
+    display: inline-block;
+    padding: 5px;
 }
 .inst {
     width: 100%;
