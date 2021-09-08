@@ -56,6 +56,10 @@ h3 {
     border: 3px solid #CCEABB;
 }
 /* message */
+.inner-msg-div {
+    height: 470px;
+    overflow: auto
+}
 .msg-div {
     height: 100%;
     display: inline-block;

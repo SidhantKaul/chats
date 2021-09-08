@@ -122,9 +122,11 @@ function Msg(props) {
     <div className="msg-div">
       <Top data={props.member} id={props.id} />
       {console.log(channels[props.id - 1])}
+      <div className="inner-msg-div">
       {props.id !== 0 &&
         channels[props.id - 1] !== undefined &&
         channels[props.id - 1].messages.map(handleFunc)}
+        </div>
       <Typefield func={msg} id={props.id} socket={props.socket} />
     </div>
   );
