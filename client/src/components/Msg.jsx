@@ -93,15 +93,15 @@ function Msg(props) {
   function date(key) {
     let d = new Date(key);
     console.log(d);
-    let da = ""+d
-    const date = da.substring(8,10)+"/"+da.substring(11,15);
+    let da = "" + d;
+    const date = da.substring(8, 10) + "/" + da.substring(11, 15);
     return date;
   }
   function time(key) {
     let d = new Date(key);
     console.log(d);
-    let da = ""+d
-    const time = da.substring(16,21);
+    let da = "" + d;
+    const time = da.substring(16, 21);
     return time;
   }
   // })
@@ -123,10 +123,10 @@ function Msg(props) {
       <Top data={props.member} id={props.id} />
       {console.log(channels[props.id - 1])}
       <div className="inner-msg-div">
-      {props.id !== 0 &&
-        channels[props.id - 1] !== undefined &&
-        channels[props.id - 1].messages.map(handleFunc)}
-        </div>
+        {props.id !== 0 &&
+          channels[props.id - 1] !== undefined &&
+          channels[props.id - 1].messages.map(handleFunc)}
+      </div>
       <Typefield func={msg} id={props.id} socket={props.socket} />
     </div>
   );

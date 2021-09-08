@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
@@ -6,21 +6,21 @@ import Button from "react-bootstrap/Button";
 import { io } from "socket.io-client";
 import SendIcon from "@material-ui/icons/Send";
 function Typefield(props) {
-    console.log(props.id);
+  console.log(props.id);
   const [text, setText] = useState("");
-  const [name,setName] = useState("");
+  const [name, setName] = useState("");
   let io = props.socket;
   console.log(props.id);
-  useEffect(()=> {
+  useEffect(() => {
     io.on("chat", (data) => {
-      console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+      console.log(
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      );
       console.log(data);
-       props.func(data);
-    
+      props.func(data);
     });
-  },[])
-  
-  
+  }, []);
+
   async function handleClick() {
     let i = 0;
     let obj = {};
@@ -30,7 +30,7 @@ function Typefield(props) {
       senderName: name,
       id1: Date.now(),
     });
-    
+
     console.log(obj);
 
     setText("");
@@ -45,7 +45,14 @@ function Typefield(props) {
   }
   return (
     <div className="type-box">
-      <Form.Control onChange={handleChange1} value={name}  style={{ border: "1px solid #3F3F44",marginBottom:"10px" }} className="name-box shadow-none" type="text" placeholder="Your name" />
+      <Form.Control
+        onChange={handleChange1}
+        value={name}
+        style={{ border: "1px solid #3F3F44", marginBottom: "10px" }}
+        className="name-box shadow-none"
+        type="text"
+        placeholder="Your name"
+      />
       <InputGroup className="mb-3 shadow-none">
         <FormControl
           style={{ border: "1px solid #3F3F44" }}

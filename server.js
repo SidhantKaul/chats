@@ -11,7 +11,7 @@ const STATIC_CHANNELS = [
     participants: 0,
     id: 1,
     sockets: [],
-    messages:[],
+    messages: [],
     img: "../sidhant.jpeg",
   },
   {
@@ -19,7 +19,7 @@ const STATIC_CHANNELS = [
     participants: 0,
     id: 2,
     sockets: [],
-    messages:[],
+    messages: [],
     img: "../sidhant.jpeg",
   },
   {
@@ -27,7 +27,7 @@ const STATIC_CHANNELS = [
     participants: 0,
     id: 3,
     sockets: [],
-    messages:[],
+    messages: [],
     img: "../sidhant.jpeg",
   },
 ];
@@ -51,7 +51,7 @@ app.get("/getmsg/:id", function (req, res) {
   console.log(Message);
   console.log("GFC HGVVH >>" + id);
   console.log(id);
-  Message.find({channelId:id},function (err, result) {
+  Message.find({ channelId: id }, function (err, result) {
     if (err) console.log(err);
     else {
       console.log(result);
@@ -59,9 +59,9 @@ app.get("/getmsg/:id", function (req, res) {
     }
   });
 });
-app.get("/getchannels",function(req,res){
+app.get("/getchannels", function (req, res) {
   res.send(STATIC_CHANNELS);
-})
+});
 app.get("/getchannel", function (req, res) {
   res.json({
     channels: STATIC_CHANNELS,
